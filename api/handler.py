@@ -2,6 +2,7 @@ from flask import Flask, request, Response
 import pickle
 import pandas as pd
 from mobility import MobilityCars
+import os
 
 model = pickle.load(open('model/model_xgb.pkl', 'rb'))
 
@@ -36,4 +37,5 @@ def mobility_preditc():
             return Response('{}', status=200, mimutype = 'application/json')
                     
 if __name__ == '__main__':
-    app.run('192.168.18.4')
+    port = os.environ.get('PORT',5000)
+    app.run('0.0.0.0',port=port)
