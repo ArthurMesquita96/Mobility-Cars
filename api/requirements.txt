@@ -8,7 +8,7 @@ charset-normalizer==3.2.0
 click==8.1.6
 contourpy==1.0.6
 cycler==0.11.0
-Flask==2.3.2
+Flask==2.2.5
 fonttools==4.41.1
 fqdn==1.5.1
 importlib-resources==6.0.0
