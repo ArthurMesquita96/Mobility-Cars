@@ -7,7 +7,7 @@ from unidecode import unidecode
 class MobilityCars():
     
     def __init__(self):
-        home_path = 'C:/Users/Notebook/repos/Mobility-Cars/api/'
+        home_path = ''
         self.sc_km_media_ano        = pickle.load(open(home_path + 'parameters/sc_km_media_ano.pkl','rb'))
         self.rs_ano_de_fabricacao   = pickle.load(open(home_path + 'parameters/rs_ano_de_fabricacao.pkl','rb'))
         self.rs_ano_modelo          = pickle.load(open(home_path + 'parameters/rs_ano_modelo.pkl','rb'))
