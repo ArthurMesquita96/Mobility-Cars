@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 from mobility import MobilityCars
 
-model = pickle.load(open('C:/Users/Notebook/repos/Mobility-Cars/model/model_xgb.pkl', 'rb'))
+model = pickle.load(open('C:/Users/Notebook/repos/Mobility-Cars/api/model/model_xgb.pkl', 'rb'))
 
 app = Flask(__name__)
 
