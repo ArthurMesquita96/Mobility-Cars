@@ -87,7 +87,7 @@ class MobilityCars():
         df4['km_media_ano_em_1k_km'] = round(df4['km_media_ano_em_1k_km'] / 1000, 0).astype(int)
 
         # criando feature de agregação do veículo com marca, modelo, km_media e localidade
-        df4['veiculo'] = df4['marca'].astype(str) + "_" + df4['modelo'].astype(str) + "_" + df4['km_media_ano_em_1k_km'].astype(str)
+        df4['veiculo'] = df4['marca'].astype(str) + "_" + df4['modelo'].astype(str)# + "_" + df4['km_media_ano_em_1k_km'].astype(str)
         
         return df4
 
@@ -162,6 +162,10 @@ class MobilityCars():
         'combustivel',
         'localidade_vendedor'
         ]
+
+        from sklearn.impute import KNNImputer
+        imputer = KNNImputer(n_neighbors=5, copy=True)
+        df_prep[features_selected] = pd.DataFrame(imputer.fit_transform(df_prep[features_selected]),columns = features_selected)
         
         return df_prep[features_selected]
     
