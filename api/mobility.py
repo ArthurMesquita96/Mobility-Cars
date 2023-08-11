@@ -157,8 +157,10 @@ class MobilityCars():
         'ano_modelo',
         'odometro',
         'cambio',
+        'cor',
         'tipo',
         'cilindradas',
+        'valvulas',
         'combustivel',
         'localidade_vendedor'
         ]
