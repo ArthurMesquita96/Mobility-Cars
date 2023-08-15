@@ -98,7 +98,7 @@ O modelo foi publicado em um ambiente cloud chamado [Render.com](http://Render.c
         
     - Os motoristas parecem preferir carros fabricados até 10 anos atrás
     - Carros com mais de 10 anos de existância tem um preço menor mas esse preço se estabiliza na faixa dos RS 60 mil
-    - Somenta para carros com mais de 40 anos que esse valor parece cair novamente
+    - Somente para carros com mais de 40 anos que esse valor parece cair novamente
 <div align="center">
 <img src="images/H2.png" width="1000px">
 </div>
