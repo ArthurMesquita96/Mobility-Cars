@@ -87,7 +87,7 @@ O modelo foi publicado em um ambiente cloud chamado [Render.com](http://Render.c
 - VERDADEIRO
 - Quanto mais quilometros rodados o carro tiver, mais barato isso será. Isso pode ser observado também sabendo que após 20 mil quilometros rodados o carro passa a ser considerado usado ao invés de semi novo, o que reduz bastante seu preço
 <div align="center">
-<img src="images/H1.png" width="500px">
+<img src="images/H1.png" width="700px">
 </div>
 </br>
 
@@ -100,7 +100,7 @@ O modelo foi publicado em um ambiente cloud chamado [Render.com](http://Render.c
     - Carros com mais de 10 anos de existância tem um preço menor mas esse preço se estabiliza na faixa dos RS 60 mil
     - Somenta para carros com mais de 40 anos que esse valor parece cair novamente
 <div align="center">
-<img src="images/H2.png" width="500px">
+<img src="images/H2.png" width="700px">
 </div>
 </br>
 
