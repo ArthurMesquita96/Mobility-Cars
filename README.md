@@ -80,11 +80,31 @@ Após a escolha do melhor modelo para o nosso projeto, nesta etapa foram selecio
 ## 2.12. *Modelo em Produção*
 O modelo foi publicado em um ambiente cloud chamado [Render.com](http://Render.com) para que outras pessoas e serviços possam consultá-lo e utilizar suas predições para tomar melhores decisões
 
-# 3. Top 3 data Insights
+# 3. Top Data Insights
 
-- Mostrar que você também sabe analisar dados e não necessáriamente só aplicar machine learning
+### H1. Carros com maior número de quilometros rodados são mais baratos
 
-# 4. Machine Learning Modelo Applied (Modelos Aplicados)
+- VERDADEIRO
+- Quanto mais quilometros rodados o carro tiver, mais barato isso será. Isso pode ser observado também sabendo que após 20 mil quilometros rodados o carro passa a ser considerado usado ao invés de semi novo, o que reduz bastante seu preço
+<div align="center">
+<img src="images/H1.png" width="500px">
+</div>
+</br>
+
+### H2. Carro mais antigos tendem a ter um preço menor 
+
+- VERDADEIRO
+- Quanto mais antigo o carro seu preço tende a ser mais baixo. Mas isso ocorre até certo ponto:
+        
+    - Os motoristas parecem preferir carros fabricados até 10 anos atrás
+    - Carros com mais de 10 anos de existância tem um preço menor mas esse preço se estabiliza na faixa dos RS 60 mil
+    - Somenta para carros com mais de 40 anos que esse valor parece cair novamente
+<div align="center">
+<img src="images/H2.png" width="500px">
+</div>
+</br>
+
+# 4. Modelos Aplicados
 
 - Foram testados 4 modelos de machine learning para este problema:
     - Linear Regression
@@ -92,7 +112,7 @@ O modelo foi publicado em um ambiente cloud chamado [Render.com](http://Render.c
     - Random Forest
     - XGBoost
 
-# 5. Machine Learning Performance (Performance do Modelo)
+# 5. Performance do Modelo
 
 A avaliação dos modelos foi realizada através da técnica de cross validation que realizada diversas repartições no dataset para testar ao máximo a capacidade de generalização do modelo
 Abaixo é mostrado o resultado obtido para os 4 modelos, considerando as métricas de MAE, MAPE e RMSE:
@@ -134,6 +154,13 @@ Com esse modelo implementado, a Mobility Cars, terá uma fonte mais precisa para
 
 # 8. Lições Aprendidas
 
-- O que foi legal? O que foi bom? E o que foi ruim? Qual o maior desafio enfrentado nesse projeto e como você superou?
+Neste projeto, lidei com situações novas e me deparei com alguns desafios que aprendi a tratar como:
+
+- Dataset com Labels raras: como o dataset possuia muitas variáveis categoricas, algumas das categorias possuiam frequencia muito baixa, o que foi um desafio para atingir uma boa performance.
+- Muitas variáveis categóricas: isso dificultou um pouco o tratamento e o encode dos dados mas consegui contornar isso com funções e organização no código
 
 # 9. Proximos Passos
+
+- Derivar mais features a partir da feature de "versão" que possui informações releventes
+- Criar novas features baseada no modelo de negócio como por exemplo, carros são consideramos seminovos quando possuem menos de 3 anos de uso e menos de 20 mil km rodados. Carros com mais de 20 km rodados são considerados usados, e etc.
+- Utilizar a classe Pipelines do Sklearn para melhorar a organização do cógido e sua legibilidade
