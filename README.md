@@ -78,7 +78,7 @@ Os algoritmos testados foram avaliados com base nas métricas de erro mais comun
 Após a escolha do melhor modelo para o nosso projeto, nesta etapa foram selecionados os parametros para o modelo que maximizam os resultados.
 
 ## 2.12. *Modelo em Produção*
-O modelo foi publicado em um ambiente cloud chamado [Render.com](http://Render.com) para que outras pessoas e serviços possam consultá-lo e utilizar suas predições para tomar melhores decisões. Logo após, foi realizada a previsão dos preços para todos os carros disponíveis na Mobility Cars e então os dados desses veículos bem como o seu valor de venda sugerido foram organizados em [um painel no Power BI]([https://app.powerbi.com/groups/me/reports/0816ed1c-ff81-4f22-8b5c-d8058c221c43/ReportSection?experience=power-bi]) para que os consultores de vendas possam acessar facilmente os modelos de interesse.
+O modelo foi publicado em um ambiente cloud chamado [Render.com](http://Render.com) para que outras pessoas e serviços possam consultá-lo e utilizar suas predições para tomar melhores decisões. Logo após, foi realizada a previsão dos preços para todos os carros disponíveis na Mobility Cars e então os dados desses veículos bem como o seu valor de venda sugerido foram organizados em [um painel no Power BI](https://app.powerbi.com/groups/me/reports/0816ed1c-ff81-4f22-8b5c-d8058c221c43/ReportSection?experience=power-bi) para que os consultores de vendas possam acessar facilmente os modelos de interesse.
 
 <div align="center">
 <img src="images/power_bi.jpg" width="700px">
